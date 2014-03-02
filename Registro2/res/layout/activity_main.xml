@@ -1,0 +1,173 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/textViewFechaNac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/Datos"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textViewAnyoNac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewFechaNac"
+            android:layout_below="@+id/textViewFechaNac"
+            android:layout_marginTop="10dp"
+            android:text="@string/FechaNacimiento"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewNombUser"
+            android:layout_alignRight="@+id/textViewNombUser"
+            android:layout_below="@+id/textViewNombUser"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewApelliUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editNombre"
+            android:layout_below="@+id/editNombre"
+            android:text="@string/Apellidos"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewApelliUser"
+            android:layout_alignRight="@+id/textViewApelliUser"
+            android:layout_below="@+id/textViewApelliUser"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewEmailUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editApellidos"
+            android:layout_below="@+id/editApellidos"
+            android:text="@string/Email"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewEmailUser"
+            android:layout_below="@+id/textViewEmailUser"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textViewPassUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editEmail"
+            android:layout_below="@+id/editEmail"
+            android:text="@string/Password"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewPassUser"
+            android:layout_below="@+id/textViewPassUser"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textViewRepPassUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editPass"
+            android:layout_below="@+id/editPass"
+            android:text="@string/RePassword"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editRepass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewRepPassUser"
+            android:layout_below="@+id/textViewRepPassUser"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editRepass"
+            android:layout_marginTop="15dp"
+            android:text="@string/Terminos"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:text="@string/AceptaTerminos" />
+
+        <TextView
+            android:id="@+id/MensajeError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkBox1"
+            android:layout_below="@+id/checkBox1"
+            android:text=""
+            android:textColor="#990000"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/MensajeError"
+            android:layout_below="@+id/MensajeError"
+            android:layout_marginTop="18dp"
+            android:onClick="comprobarFormulario"
+            android:text="@string/enviar" />
+
+        <EditText
+            android:id="@+id/editFechaNac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewNombUser"
+            android:layout_below="@+id/textViewAnyoNac"
+            android:maxLength="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textViewNombUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewAnyoNac"
+            android:layout_below="@+id/editFechaNac"
+            android:text="@string/Nombre"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+</ScrollView>

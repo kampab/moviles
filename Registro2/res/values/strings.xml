@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Crear Cuenta</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="FechaNacimiento">Fecha de Nacimiento (DD/MM/AAAA)</string>
+    <string name="Mes">Mes</string>
+    <string name="Dia">Día</string>
+    <string name="Anyo">Año</string>
+    <string name="Datos">Datos Personales</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Apellidos">Apellidos</string>
+    <string name="Email">E-mail</string>
+    <string name="Password">Contraseña</string>
+    <string name="RePassword">Repita Contraseña</string>
+    <string name="Terminos">Si usas nuestros servicios, aceptas que la aplicación use dichos datos de conformidad con sus políticas de privacidad.</string>
+    <string name="FaltaNombre">El campo Nombre es obligatorio</string>
+    <string name="FaltaFechaNac">La fecha de Nacimiento es obligatoria</string>
+    <string name="ErrorFechaNac">Hay errores en la fecha de nacimiento</string>
+    <string name="FaltaApellido">El campo Apellidos es obligatorio</string>
+    <string name="FaltaEmail">El campo Email es obligatorio</string>
+    <string name="Noacepta">Es necesario aceptar los términos de uso</string>
+    <string name="Contrasenyaincorrecta">Las contraseñas no coinciden</string>
+    <string name="UserCreado">Usuario Creado Correctamente</string>
+    <string name="enviar">Enviar</string>
+    <string name="AceptaTerminos">Acepto los términos de uso</string>
+    <string name="ConfirmarCrear">¿Enviar datos de formulario?</string>
+    <string name="Aceptar">Aceptar</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="CrearUser">Creación del Usuario</string>
+    <string name="title_activity_inicio_sesion">Iniciar Sesión</string>
+    <string name="SugerenciaRegistro">¿Aún no estás registrado?</string>
+    <string name="Registrate">Regístrate</string>
+    <string name="ErrorLog">El usuario o la password son incorrectos</string>
+    <string name="UserExiste">Ya hay un usuario con ese email</string>
+
+</resources>

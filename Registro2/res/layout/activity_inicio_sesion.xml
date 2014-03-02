@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".InicioSesion" >
+
+    <EditText
+        android:id="@+id/IntroducirMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:ems="10" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/IntroducirPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EnviarLog"
+        android:layout_alignParentTop="true"
+        android:text="@string/Email"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/IntroducirMail"
+        android:layout_below="@+id/IntroducirMail"
+        android:layout_marginTop="30dp"
+        android:text="@string/Password"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/EnviarLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IntroducirPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:onClick="PulsadoBoton"
+        android:text="@string/enviar" />
+
+    <TextView
+        android:id="@+id/ErrorLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EnviarLog"
+        android:layout_below="@+id/IntroducirPass"
+        android:layout_marginTop="26dp"
+        android:visibility="invisible"
+        android:textColor="#990000"/>
+
+    <Button
+        android:id="@+id/PasarARegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EnviarLog"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        android:onClick="PulsadoBoton"
+        android:text="@string/Registrate"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/PasarARegistro"
+        android:layout_centerHorizontal="true"
+        android:text="@string/SugerenciaRegistro"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
