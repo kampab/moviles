@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brillo" />
+
+    <SeekBar
+        android:id="@+id/guardado_brillo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:max="100"
+        android:progress="50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fondo" />
+
+    <RadioGroup
+        android:id="@+id/radio_grupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio_blanco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="@string/blanco"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_negro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="@string/negro"
+            />
+    </RadioGroup>
+
+</LinearLayout>
